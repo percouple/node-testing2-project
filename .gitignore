@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,nextjs,node,react
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode,nextjs,node,react
+# Created by https://www.toptal.com/developers/gitignore/api/node,xcode,visualstudiocode,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,xcode,visualstudiocode,macos
 
 ### macOS ###
 # General
@@ -34,46 +34,15 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
-### NextJS ###
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
 ### Node ###
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -114,6 +83,7 @@ jspm_packages/
 web_modules/
 
 # TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -204,19 +174,6 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-### react ###
-.DS_*
-**/*.backup.*
-**/*.back.*
-
-node_modules
-
-*.sublime*
-
-psd
-thumb
-sketch
-
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -236,4 +193,21 @@ sketch
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,nextjs,node,react
+### Xcode ###
+## User settings
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# End of https://www.toptal.com/developers/gitignore/api/node,xcode,visualstudiocode,macos
